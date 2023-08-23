@@ -1,4 +1,15 @@
 {
+  "name": "express-ts-api",
+  "version": "0.0.1",
+  "description": "Express API with TypeScript",
+  "main": "index.js",
+  "prisma": {
+    "seed": "node --require esbuild-register ./prisma/seed.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  },
   "dependencies": {
     "@prisma/client": "^5.2.0",
     "cors": "^2.8.5",
